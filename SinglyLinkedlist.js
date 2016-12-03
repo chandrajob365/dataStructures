@@ -95,7 +95,7 @@ SinglyLinkedList.prototype.search = function(index){
   var count =0;
   length = this._length;
   message = {failure: 'Failure: non-existent node in this list'};
-  
+
     if (length === 0 || index < 0 || index >= length) {
         console.log(message.failure + " at index " + index);
     }else{
@@ -122,6 +122,11 @@ SinglyLinkedList.prototype.search = function(index){
  linkedList1.addAt(310,5);
  console.log("----- Display after addAt 5 -----");
  linkedList1.display();
+
+ linkedList1.add(540);
+ console.log("----- Display after adding 540 -----");
+ linkedList1.display();
+
  linkedList1.search(-1);
  linkedList1.search(0);
  linkedList1.search(3);
