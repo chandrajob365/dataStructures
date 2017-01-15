@@ -6,7 +6,7 @@ this.next = null;
  this.head=null;
  this._length =0;
  }
-
+var currentNode=null;
  SinglyLinkedList.prototype.add = function(data){
  var node = new Node(data);
  currentNode = this.head;
